@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="description" content=" This is a new proffesional project WDD231 Chamber of Commerce of  the city Manta-Ecuador">
+     <meta name="keywords" content=" chamber of commerce, camara del comercio Manta, WDD231, BYU-IDAHO-PATHWAY">
+     <meta name="author" content="Ariel Rivera">
+
+
+    <title>Chamber directory page</title>
+    <link rel="stylesheet" href="css/smaller.css">
+    <link rel="stylesheet" href="css/larger.css">
+
+   
+     <script src="js/directory.js" defer></script>
+     <script src="js/join.js" defer></script>
+
+
+    <link rel="icon" href="images/logo_chamb.webp" type="image/webp" class="icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    
+</head>
+<body>
+    <header class="header">
+        
+        <div class="logo-container">
+            <img src="images/logo_chamb_11zon.webp" alt="logo_chamber" class="logo_header">
+            <h2>Manta</h2>
+            <p>Chamber of Commerce</p>
+
+        </div>
+         <button class="menu-toggle" aria-label="Open menu" id="menu-ham">≡</button>
+       
+    </header>
+
+    <nav>
+       
+        <ul>
+            <li><a href="chamber.html" class="nav-item ">Home</a></li>
+            <li><a href="directory.html" class="nav-item ">Directory</a></li>
+            <li><a href="join.html" class="nav-item active">Join</a></li>
+            <li><a href="discover.html" class="nav-item">Discover</a></li>
+        </ul>
+
+      
+
+     
+    </nav>
+
+
+
+    <main>
+        <h1>Join</h1>
+
+        <section class="join-section">
+            
+            <div class="join-container">
+
+                <form action="thankyou.html" method="get"> 
+                    <input type="hidden" id="timestamp" name="timestamp" value="">
+
+                    <fieldset class="flst-join">  
+
+                        <legend class="member-form">Membership Application Form</legend>
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" autocomplete="family-name"  placeholder="Zimmermann">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" autocomplete="given-name"  placeholder="Benjamin">
+
+                        <label for="title">Title</label>
+                        <input type="text" id="title" name="title"  pattern="[a-zA-Z\s\-]{7,}" title="At last 7 characters (letters, spaces, hyphens only)" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email"  autocomplete="email"  placeholder="examplemyname@gmail.com" required>
+                        <!--falta-->
+                        <label for="number">Phone Number</label>                
+                        <input type="tel" id="number" name="number" autocomplete="tel"  placeholder="+1 564 568 698">
+
+                        <label for="cname">Company Name</label>
+                        <input type="text" id="cname" name="cname" autocomplete="organization"  placeholder="Conservas Isabel">
+
+                        <label for="caddress">Company Address</label>
+                        <input type="text" id="caddress" name="caddress"  autocomplete="street-address" placeholder="Av. Malecón y Calle 23" required>
+
+                        <label for="bdescription">Business Description</label>
+                        <textarea id="bdescription" name="bdescription"  autocomplete="off"  placeholder="Complete your business description" required></textarea>
+
+                         
+                    </fieldset>
+
+                    <fieldset>  
+                        <legend>Membership Application Form</legend>
+
+                        <label class="membership-option">
+                            <input type="radio" name="membership" value="non-profit" required>
+                            <span>Not Profit Membership</span> 
+
+                        </label>
+                        
+                        <label class="membership-option">
+                            <input type="radio" name="membership" value="bronze" required>
+                            <span> Bronze Membership</span> 
+
+                        </label>
+
+                        <label class="membership-option">
+                            <input type="radio" name="membership" value="silver" required>
+                            <span>Silver Membership</span>
+
+                        </label>
+                        
+                        <label class="membership-option">
+                            <input type="radio" name="membership" value="gold" required>
+                            <span>  Gold Membership</span>
+                        </label>
+                        
+                        
+
+                    </fieldset>
+                        <div class="join__btn-container">
+                             <button type="submit">Apply for Membership</button>
+                         </div>
+                    
+                 </form>
+
+                 
+
+            </div>
+
+
+                <div class="membership-levels-container">  
+                    <h3>Membership Levels</h3>
+                    <div class="membership-levels">   
+                        <p>Non Profit Membership Level</p>
+                        <button type="button" class="learn-more">Learn More</button>
+
+                     </div>
+
+                    <div class="membership-levels">   
+                        <p>Bronze Membership Level</p>
+                        <button type="button" class="learn-more">Learn More</button>
+                    </div>
+
+                    <div class="membership-levels">   
+                        <p>Silver Membership Level</p>
+                        <button type="button" class="learn-more">Learn More</button>
+                    </div>
+
+                    <div class="membership-levels">   
+                        <p>Gold Membership Level</p>
+                        <button type="button" class="learn-more">Learn More</button>
+                    </div>
+                </div>
+     </section>
+
+
+        
+ </main>
+
+
+
+     <footer class="footer">
+        <div class="footer-contact">
+            <h3> Manta Chamber of commerce</h3>
+            <p>av. Malecon y Calle 23</p>
+            <p>Manta, Manabi, Ecuador</p>
+            <p>cacoma@ccm.org.ec | (05) 262-1306</p>
+
+        </div>
+
+
+
+
+
+        <div class="footer-social">
+            <a href="https://www.facebook.com/camaracomerciomanta" target="_blank" rel="noopener" aria-label="Facebook">
+                f 
+                
+            </a>
+
+            <a href="https://x.com/cacomaoficial" target="_blank" rel="noopener" aria-label="Twitter">
+                𝕏
+                
+                 
+            </a>
+
+            <a href="https://www.linkedin.com/in/ariel-rivera-palma/" target="_blank" rel="noopener" aria-label="LinkedIn" > 
+                in
+            
+            </a>
+            
+
+        </div>
+
+        <div class="footer-dev-info">
+            <p> WDD 231 Class Project</p>
+            <p>Ariel Rivera </p>
+            <p><i id="current-year"></i></p>
+            <p><i class="last-modified"></i></p>
+
+        </div>
+
+    </footer>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2> Members Details</h2>
+            <p> This is where you´ll find the important information that you want to display when  you  click</p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

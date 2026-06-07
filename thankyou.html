@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content=" This is a new proffesional project WDD231 Chamber of Commerce of  the city Manta-Ecuador">
+    <meta name="description" content=" This is a new proffesional project WDD231 Chamber of Commerce of  the city Manta-Ecuador">
     <meta name="keywords" content=" chamber of commerce, camara del comercio Manta, WDD231, BYU-IDAHO-PATHWAY">
     <meta name="author" content="Ariel Rivera">
-    
-    <title> Chamber directory page</title>
+
+
+    <title>Chamber directory page</title>
+
     <link rel="stylesheet" href="css/smaller.css">
     <link rel="stylesheet" href="css/larger.css">
 
-    <script src="js/directory.js" defer></script>
 
-
-    <link rel="icon" href="images/logo_chamb.webp" type="image/webp">
-    
-    
 </head>
 <body>
-    <header class="header">
+     <header class="header">
         
         <div class="logo-container">
             <img src="images/logo_chamb_11zon.webp" alt="logo_chamber" class="logo_header">
@@ -35,8 +32,8 @@
        
         <ul>
             <li><a href="chamber.html" class="nav-item ">Home</a></li>
-            <li><a href="directory.html" class="nav-item active">Directory</a></li>
-            <li><a href="join.html" class="nav-item">Join</a></li>
+            <li><a href="directory.html" class="nav-item ">Directory</a></li>
+            <li><a href="join.html" class="nav-item active" >Join</a></li>
             <li><a href="discover.html" class="nav-item">Discover</a></li>
         </ul>
 
@@ -45,28 +42,17 @@
      
     </nav>
 
-     
 
-
-    <main >
-
-        <h1>Directory</h1>
-
-       <div class="view-toggle">
-            <button class="active" id="grid-button" type="button" title="grid view">Grid</button>
-            <button id="list-button" type="button" title="list view">List</button>
-       </div>
-
-       <section id="directory-wrapper">
-            <div id="members-container" class="grid">
-               
-
-            </div>
-
-
-        </section>
-
+    <main>
+        <div class="thanks-container">
+            <h1>Application Received!</h1>
+             <p>Thank you for your interest in joining the Manta Chamber of Commerce.</p>
+        </div>
+        
+        
+        <div id="results" class="results"></div>
     </main>
+
 
 
     <footer class="footer">
@@ -78,28 +64,20 @@
 
         </div>
 
-
-
-
-
         <div class="footer-social">
             <a href="https://www.facebook.com/camaracomerciomanta" target="_blank" rel="noopener" aria-label="Facebook">
                 f
                 
             </a>
 
-            <a href="https://x.com/cacomaoficial" target="_blank" rel="noopener"aria-label="Twitter" >
+            <a href="https://x.com/cacomaoficial" target="_blank" rel="noopener" aria-label="Twitter" >
                 𝕏
-                
-                 
             </a>
 
-            <a href="https://www.linkedin.com/in/ariel-rivera-palma/" target="_blank" rel="noopener"aria-label="LinkedIn" >
-                in
-            
+            <a href="https://www.linkedin.com/in/ariel-rivera-palma/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                 in
             </a>
             
-
         </div>
 
         <div class="footer-dev-info">
@@ -112,7 +90,30 @@
 
     </footer>
 
-    
+
+
+    <script>
+        
+        const params = new URLSearchParams(window.location.search);
+        const results = document.getElementById("results");
+        
+        let html = "<h2>Your Submitted Information:</h2><ul>";
+        for (const [key, value] of params.entries()) {
+            
+            const cleanKey = key.replace('_', ' ');
+            html += `<li><strong>${cleanKey.toUpperCase()}:</strong> ${value}</li>`;
+        }
+        html += "</ul>";
+        results.innerHTML = html;
+    </script>
+
+
+
+
+
+
+
+
 
 </body>
 </html>
