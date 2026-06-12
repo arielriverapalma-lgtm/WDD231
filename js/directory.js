@@ -71,7 +71,7 @@ function setupFooter(){
     }
 }
 
-// 5. Menú Hamburguesa (Corregido para evitar errores si no existe el botón)
+
 const menuButton = document.querySelector("#menu-ham");
 const nav = document.querySelector("nav");
 
@@ -81,7 +81,7 @@ if (menuButton && nav) {
     });
 }
 
-// Inicialización de funciones
+
 setupFooter();
 
 if (document.querySelector("#directory-wrapper")) {

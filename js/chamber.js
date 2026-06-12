@@ -1,11 +1,11 @@
 const companies = [
     {name: "Hotel Oro Verde", address: "Av Malecon y calle 23", phone: "05-262-9200", website: "https://www.oroverdemanta.com/es/", image: "images/hotel_oro_11zon.webp", membershipLevel: "Gold"},
-    {name: "Port Terminal", address: "Av. Jaime Chavez Guitierrez", phone: "05-370-0060", website:"https://www.tpm.ec/", image: "images/puerto_11zon.webp", membershipLevel: "Gold"},
-    {name:"Guso's BBQ", address: "Av. Flavio Reyes", phone: "099-123-4567", website: "#none", image: "images/guso_11zon.webp", membershipLevel: "Silver"},
-    {name: "FishCoorp", address: "Av. Flavio Reyes", phone: "098-765-4321", website: "https://www.fishcorpsa.com.ec/", image: "images/fish_corp_11zon.webp", membershipLevel: "Silver"},
+    {name: "Terminal Potuario", address: "Av. Jaime Chavez Guitierrez", phone: "05-370-0060", website:"https://www.tpm.ec/", image: "images/puerto_11zon.webp", membershipLevel: "Gold"},
+    {name:"Wyndham ", address: "Via Barbasquillo", phone: "099-123-4567", website: "https://www.wyndhamhotels.com/es-xl/wyndham/manta-ecuador/wyndham-manta-sail-plaza-hotel-and-convention-center/overview?CID=LC:46q62bu8edfbx3y:52536&iata=00093796", image: "images/wyndham.webp", membershipLevel: "Gold"},
+    {name: "Fishcorp", address: "Via Manta rocafuerte", phone: "098-765-4321", website: "https://www.fishcorpsa.com.ec/", image: "images/fish_corp_11zon.webp", membershipLevel: "Gold"},
     {name: "Conservas Isabel", address: "Via San Mateo", phone: "05-262-1120", website: "https://www.isabel.net/", image: "images/isabel_11zon.webp", membershipLevel: "Gold"},
-    {name: "ULEAM", address: "Via San Mateo", phone: "05-562-3026", website: "https://www.uleam.edu.ec/", image: "images/uleam_11zon.webp", membershipLevel: "Gold"},
-    {name: "Eurofish", address: "La Pradera", phone: "099-888-9999", website: "https://www.eurofish.com.ec/", image: "images/eurofish_11zon.webp", membershipLevel: "Silver"}
+    {name: "Mall del Pacifico", address: "Av. Malecón, Manta", phone: "05-562-3026", website: "https://malldelpacifico.com.ec/", image: "images/mall.png", membershipLevel: "Gold"},
+    {name: "Eurofish", address: "Av. Hugo de Mayo y calle Transmarina", phone: "099-888-9999", website: "https://www.eurofish.com.ec/", image: "images/eurofish_11zon.webp", membershipLevel: "Silver"}
 ];
 
 function displayMembers() {
@@ -88,3 +88,21 @@ document.addEventListener("DOMContentLoaded", () => {
     displayMembers();
     displayWeather();
 });
+
+
+
+const menuButton = document.querySelector("#menu-ham");
+const nav = document.querySelector("nav");
+
+if (menuButton && nav) {
+    menuButton.addEventListener("click", () => {
+        nav.classList.toggle("open");
+    });
+}
+
+
+setupFooter();
+
+if (document.querySelector("#directory-wrapper")) {
+    fetchMembers();
+}

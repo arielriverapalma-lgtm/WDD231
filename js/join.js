@@ -27,3 +27,18 @@ document.addEventListener("click", (event) => {
 
 
 
+const menuButton = document.querySelector("#menu-ham");
+const nav = document.querySelector("nav");
+
+if (menuButton && nav) {
+    menuButton.addEventListener("click", () => {
+        nav.classList.toggle("open");
+    });
+}
+
+
+setupFooter();
+
+if (document.querySelector("#directory-wrapper")) {
+    fetchMembers();
+}

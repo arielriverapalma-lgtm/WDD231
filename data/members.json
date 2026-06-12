@@ -10,7 +10,7 @@
     },
 
     {
-        "name": "Port terminal",
+        "name": "Terminal Portuario",
         "address": "Av. Jaime Chavez Guitierrez",
         "phone": "05-370-0060",
         "website": "https://www.tpm.ec/",
@@ -21,22 +21,22 @@
     },
 
     {
-        "name":"Guso´s BBQ ",
-        "address":"Av. Flavio Reyes",
+        "name":"Wyndham ",
+        "address":"Via Barbasquillo",
         "phone": "099-123-4567",
-        "website": "#none",
-        "image": "guso_11zon.webp",
-        "membershipLevel": "Silver",
+        "website": "https://www.wyndhamhotels.com/es-xl/wyndham/manta-ecuador/wyndham-manta-sail-plaza-hotel-and-convention-center/overview?CID=LC:46q62bu8edfbx3y:52536&iata=00093796",
+        "image": "wyndham.webp",
+        "membershipLevel": "Gold",
         "classType": "silver-member"
     },
 
     {
-        "name": "FishCoorp",
-        "address": "Av.Flavio Reyes",
+        "name": "Fishcorp",
+        "address": "Via Manta rocafuerte",
         "phone": "098-765-4321",
         "website": "https://www.fishcorpsa.com.ec/",
         "image": "fish_corp_11zon.webp",
-        "membershipLevel": "Silver",
+        "membershipLevel": "Gold",
         "classType": "silver-member"
         
 
@@ -54,11 +54,11 @@
 
 
     {
-        "name":"ULEAM",
-        "address":"via a San Mateo",
+        "name":"Mall del Pacifico",
+        "address":"Av. Malecón, Manta",
         "phone": "05-562.3026",
-        "website": "https://www.uleam.edu.ec/",
-        "image":"uleam_11zon.webp",
+        "website": "https://malldelpacifico.com.ec/",
+        "image":"mall.png",
         "membershipLevel": "Gold",
         "classType": "gold-member"
 
@@ -66,7 +66,7 @@
 
     {
         "name": "Eurofish",
-        "address": " La pradera",
+        "address": "Av. Hugo de Mayo y calle Transmarina",
         "phone": "099-888-9999",
         "website": "https://www.eurofish.com.ec/",
         "image": "eurofish_11zon.webp",
